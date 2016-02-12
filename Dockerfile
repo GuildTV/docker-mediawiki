@@ -33,9 +33,6 @@ RUN mkdir -p /data && \
   ln -s /data/LocalSettings.php /src/ && \
   ln -s /data/images /src/
 
-
-
-
 # Supervisor Config
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 ADD start.sh /start.sh
